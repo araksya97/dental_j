@@ -1,0 +1,78 @@
+.services_part {
+  background-color: #14746f1e;
+  padding-bottom: 50px;
+  .title {
+    margin-top: 120px;
+    h6 {
+      color: #14746F;
+      font-weight: 500;
+      font-size: 40px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+      text-align: center;
+      padding-top: 80px;
+      font-family: "Playfair Display", serif;
+    }
+  }
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../image/2.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    .box {
+      padding: 60px 40px;
+      height: 350px;
+      background-color: #fff;
+      border: 1px solid #eee;
+      transition: all 0.4s;
+      width: 33.333%;
+      text-align: center;
+      text-decoration: none;
+      color: #191514;
+      @media screen and (max-width: 930px){
+        width: 50%;
+      }
+      @media screen and (max-width: 510px){
+        width: 100%;
+      }
+      &:hover {
+        
+        background-color: #14746f50;
+        h2 {
+          color: transparent;
+          transition: 0.2s;
+        }
+        .more {
+          color: #14746F;
+        }
+      }
+      .icon{
+        width: 80px;
+        // margin-bottom: 10px;
+        margin: 20px auto;
+      }
+      h6 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.4;
+        font-family: "poppins", sans-serif;
+        padding-bottom: 30px;
+      }
+      .more {
+        color: #191514;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Teko", sans-serif;
+        text-decoration: none;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
