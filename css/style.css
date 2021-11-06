@@ -30,6 +30,28 @@ img {
   object-fit: cover;
 }
 
+.head_section {
+  position: relative;
+}
+.head_section .head_img {
+  width: 100%;
+  height: 900px;
+}
+.head_section .head_img img {
+  object-position: right;
+}
+.head_section .head_text {
+  position: absolute;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 600px;
+  left: 30%;
+  top: 50%;
+  transform: translate(-30%, -50%);
+  font-size: 60px;
+}
+
 /* swiper */
 .swiper-header {
   width: 100%;
@@ -216,6 +238,95 @@ img {
 .service-page .service-items .services_text h4 {
   font-size: 18px;
 }
+.service-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.description__card {
+  position: relative;
+  text-align: center;
+  width: 340px;
+  height: 200px;
+  margin: 0 20px 40px;
+  cursor: pointer;
+}
+.description__card:hover .description__card-inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+}
+
+.description__card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+}
+
+.description__card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0 30px;
+}
+.description__card-face .description__card-icons {
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  color: white;
+}
+.description__card-face h3 {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.74;
+  color: #DBDEE3;
+  margin-top: 25px;
+}
+.description__card-face li {
+  font-size: 20px;
+  line-height: inherit;
+  font-weight: 400;
+  color: #272B47;
+  text-align: left;
+  list-style: circle;
+}
+
+.back {
+  background: #DBDEE3;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
 .menu_part .menu_bg {
   height: 350px;
   background-repeat: no-repeat;
