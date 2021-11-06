@@ -12,26 +12,27 @@
     min-height: 550px;
     max-height: 700px;
     margin:0  20px;
+ 
 
-    @media screen and (max-width: 830px) {
-      width: 100vw;
-      height: 50vw;
-      min-height: 350px;
+    @media screen and (max-width: 990px) {
+      width: 90vw;
+      height: 65vw;
+      min-height: 450px;
       padding-bottom: 40px;
-      margin:0;
-
+      margin: 0 auto;
     }
     img {
       height: 100%;
       width: 100%;
       object-fit: cover;
-       object-position: center right ;
+      object-position: center;
+
     }
   }
   &__content {
     display: flex;
     margin-top: 50px;
-    @media screen and (max-width: 830px) {
+    @media screen and (max-width: 990px) {
       flex-wrap: wrap;
     }
     .desc {
@@ -39,7 +40,7 @@
       color: #212121;
       margin: 0 30px;
       font-family: "Mulish";
-      @media screen and (max-width: 830px) {
+      @media screen and (max-width: 990px) {
         width: 100vw;
       }
       .title{

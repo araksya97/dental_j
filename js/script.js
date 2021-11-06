@@ -9,15 +9,16 @@ const swiper = new Swiper('.slide', {
     el: '.swiper-pagination',
   },
   slidesPerView: 1,
+  // centeredSlides: true,
   spaceBetween: 20,
   breakpoints: {
-    420: {
+    600: {
       slidesPerView: 2,
     },
-    700: {
+    950: {
       slidesPerView: 3,
     },
-    1080: {
+    1200: {
       slidesPerView: 4,
     }
   }

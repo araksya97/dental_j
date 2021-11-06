@@ -15,9 +15,9 @@
   list-style-position: inside;
 }
 .container {
-  max-width: 1280px;
+  max-width: 1580px;
   margin: 0 auto;
-  @media screen and (max-width: 1310px) {
+  @media screen and (max-width: 1610px) {
     padding: 0 30px;
   }
 }
@@ -34,8 +34,7 @@ img {
 }
 
 .swiper-header .swiper-slide {
-  height: 600px;
-  // margin: 40px 0; 
+  height: 700px;
   @media screen and (max-width: 1080px) {
     height: 45vw;
   }
@@ -45,11 +44,11 @@ img {
   }
 }
 .swiper-pagination-bullet-active {
-  background: #14746F;
+  background: #6247AA;
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #14746F;
+  color: #6247AA;
 }
 .section1 {
   position: relative;
@@ -136,26 +135,28 @@ img {
   align-items: center;
   text-align: center;
   color: #fff;
-  @media screen and (max-width: 1070px) {
-    font-size: 126px;
-  }
-  @media screen and (max-width: 550px) {
-    font-size: 86px;
-  }
+
   h2{
     font-family: 'EB Garamond', serif;
     font-size: 60px;
-    line-height: 85px;
+
     font-weight: 400;
     // padding-bottom: 15px ;
     letter-spacing: 15px;
     border-bottom: 3px solid #fff;
     text-transform: uppercase;
+  @media screen and (max-width: 700px) {
+    font-size: 40px;
+    line-height: 65px;
+    letter-spacing: 5px;
+  }
+  @media screen and (max-width: 420px) {
+     border: none;
+    }
   }
 }
 .title_bg{
   height: 300px;
-  
   background-repeat: no-repeat;
   background-position: bottom;
   background-blend-mode: overlay;
@@ -163,6 +164,9 @@ img {
   background-size: cover;
   margin-bottom: 50px;
   background-image: url(../img/250.jpg);
+  @media screen and (max-width: 700px) {
+    height: 200px;
+   }
 }
 @import "servicesPage.scss", "menu.scss","main.scss","nav.scss", "footer.scss", "about.scss", "services.scss", "team.scss",
   "contact.scss";

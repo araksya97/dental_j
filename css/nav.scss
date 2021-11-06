@@ -1,47 +1,67 @@
-header{
-  .top-header{
-    padding: 20px 30px;
+nav {
+  .top-header.mobile{
+    display: none;
+    @media screen and (max-width: 735px) {
+      display: block;
+      padding: 20px   35px ;
+    }
+  }
+  .top-header {
+    padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-
-    .top_info_box{
+     @media screen and (max-width: 735px) {
+        display: none;
+      }
+    strong.text {
+      font-size: 21px;
+      @media screen and (max-width: 925px) {
+        display: none;
+      }
+     
+    }
+    a {
+      color: #000;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      img {
+        width: 45px;
+        margin-left: 10px;
+        @media screen and (max-width: 560px) {
+          width: 30px;
+        }
+      }
+    }
+    .top_info_box {
       display: flex;
       align-items: center;
+      flex-wrap: nowrap;
       color: #000;
       text-decoration: none;
       font-size: 18px;
       line-height: 25px;
-      transition: all .3s ease;
-
-      .icon{
-        font-size: 48px;
-        margin-right: 10px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #6247aa;
+        transition: all 0.3s ease;
       }
-    }
-    .sm_part{ 
-      font-size: 40px;
-      a{
-        color: #000;
-        text-decoration: none;
-        transition: all .3s ease;
-
-      }
-    }
-    a:hover{
-      color: #14746F;
-      transition: all .3s ease;
     }
   }
+  a:hover {
+    color: #6247aa;
+    transition: all 0.3s ease;
+  }
 }
+
 nav {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   position: sticky;
   width: 100%;
   z-index: 300;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 18px 19px -21px rgba(0,0,0,0.3);
+  box-shadow: 0px 18px 19px -21px rgba(0, 0, 0, 0.3);
 
   .nav {
     display: flex;
@@ -49,16 +69,21 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+ 
     .logo {
-      height: 35px;
-      max-width: 250px;
+      height: 115px;
+      max-width: 350px;
+      @media screen and (max-width: 560px) {
+        height: 85px;
+        max-width: 250px;
+      }
     }
     .nav_menu {
       display: flex;
       li {
         list-style-type: none;
         flex-flow: column nowrap;
-        padding: 20px 0 20px 35px ;
+        padding: 20px 0 20px 35px;
         position: relative;
         a {
           color: #000;
@@ -67,7 +92,6 @@ nav {
           font-size: 16px;
           font-weight: 200;
           text-transform: uppercase;
-          // letter-spacing: 1.5px;
           position: relative;
           &::before {
             position: absolute;
@@ -75,18 +99,18 @@ nav {
             width: 100%;
             height: 2px;
             bottom: 0;
-            background: transparent
+            background: transparent;
+          }
         }
-      }
         &:hover > a {
-          color: #14746F;
-          transition: all .3s ease;
+          color: #6247aa;
+          transition: all 0.3s ease;
           &::before {
             background: radial-gradient(
               100% 185.14% at 100% 100%,
-              #88d4ab 0%,
-              #14746f 100%
-            );;
+              #c19ee0 0%,
+              #6247aa 100%
+            );
             animation: animateLine 1s;
           }
         }
@@ -99,49 +123,42 @@ nav {
         cursor: pointer;
         margin: 20px;
         color: #000;
-        @media screen and (max-width: 500px) {
-        
-              display: block;
-              font-size: 40px;
-            
-          
+        @media screen and (max-width: 925px) {
+          display: block;
+          font-size: 40px;
         }
       }
     }
   }
 }
-nav > .nav > .nav_menu.active {
+nav  .nav  .nav_menu.active {
   transform: translateX(0px);
+  z-index: 1;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 925px) {
   nav {
     .nav {
-      // display: flex;
-      // flex-direction: row;
-      // position: relative;
       padding: 15px;
       .nav_menu {
         flex-direction: column;
-        top: 265px;
+        top: 140px;
         width: 100vw;
         left: 0;
         position: absolute;
-        background: rgba(255, 255, 255, 0.9);
-        transform: translateY(-550px);
+        background: rgb(255, 255, 255);
+        transform: translateX(-1550px);
         transition: 0.5s;
-        z-index: 100;
         padding-bottom: 50px;
         li {
-          text-align: center;
+          // text-align: center;
           padding-top: 20px;
         }
+      }
     }
   }
-  }
-  .nav_menu.active {
-    transform: translateX(0px);
-  }
+
+  
 }
 
 @keyframes animateLine {
