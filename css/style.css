@@ -211,9 +211,6 @@ img {
 
 .service-page .service-items {
   font-family: "Roboto";
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 .service-page .service-items .item {
   width: 31%;
@@ -234,10 +231,13 @@ img {
   color: #8f8f8f;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 23px;
+  text-align: center;
 }
-.service-page .service-items .services_text h4 {
-  font-size: 18px;
-}
+
 .service-wrap {
   display: flex;
   justify-content: center;
@@ -247,8 +247,8 @@ img {
 .description__card {
   position: relative;
   text-align: center;
-  width: 340px;
-  height: 200px;
+  width: 30%;
+  height: 300px;
   margin: 0 20px 40px;
   cursor: pointer;
 }
@@ -294,11 +294,9 @@ img {
   -o-border-radius: 5px;
   padding: 0 30px;
 }
-.description__card-face .description__card-icons {
-  width: 150px;
-  height: 150px;
-  padding: 30px;
-  color: white;
+.description__card-face .icon {
+  width: 100px;
+  height: 100px;
 }
 .description__card-face h3 {
   font-size: 15px;
@@ -306,7 +304,7 @@ img {
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 1.74;
-  color: #DBDEE3;
+  color: #000;
   margin-top: 25px;
 }
 .description__card-face li {

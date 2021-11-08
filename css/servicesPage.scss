@@ -1,9 +1,6 @@
 .service-page{
     .service-items{
         font-family: "Roboto";
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         .item{
             width: 31%;
             margin: 20px 10px;
@@ -23,12 +20,12 @@
             color: #8f8f8f;
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.5;
-            h4{
-                font-size: 18px;
-            }
-            p{
-                // font-size: 15px;
-            }
+            width: 70%;
+            margin: 0 auto;
+            padding: 30px;
+            font-size: 23px;
+            text-align: center;
+           
         }
     }
 
@@ -37,13 +34,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 .description__card{
     position: relative;
     text-align: center;
-    width: 340px;
-    height: 200px;
+    width: 30%;
+    height: 300px;
     margin: 0 20px 40px;
     cursor: pointer;
     &:hover .description__card-inner{
@@ -86,11 +82,10 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     padding: 0 30px;
-    .description__card-icons{
-        width: 150px;
-        height: 150px;
-        padding: 30px;
-        color: white;
+    .icon{
+        width: 100px;
+        height: 100px;
+       
     }
     h3{
         font-size: 15px;
@@ -98,7 +93,7 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         line-height: 1.74;
-        color: #DBDEE3;
+        color: #000;
         margin-top: 25px;
     }
     li{
