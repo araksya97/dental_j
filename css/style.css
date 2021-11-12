@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;900&display=swap");
+@font-face {
+  font-family: ArmFont;
+  src: url(../fonts/BraindYerevan.otf);
+}
 *,
 ::before,
 ::after {
@@ -12,6 +16,10 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   list-style-position: inside;
+}
+
+* {
+  font-family: ArmFont;
 }
 
 .container {
@@ -44,7 +52,6 @@ img {
   position: absolute;
   text-transform: uppercase;
   color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 600px;
   left: 30%;
   top: 50%;
@@ -95,7 +102,6 @@ img {
   height: 100vh;
   text-align: center;
   color: #fff;
-  font-family: "Mulish", sans-serif;
   margin-bottom: 50px;
 }
 .section1 .section1_inner .sec1_title {
@@ -126,7 +132,6 @@ img {
   margin: 20px 0;
 }
 .section1 .section1_inner .sec1_title .btn a {
-  font-family: "Mulish", sans-serif;
   text-decoration: none;
   display: inline-block;
   padding: 13px 30px;
@@ -150,7 +155,6 @@ img {
 
 .button > a {
   color: #f8f9fa;
-  font-family: "Mulish", sans-serif;
   text-decoration-line: none;
   display: inline-block;
   padding: 13px 50px;
@@ -173,7 +177,6 @@ img {
   color: #fff;
 }
 .for_bg h2 {
-  font-family: "EB Garamond", serif;
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 15px;
@@ -209,9 +212,6 @@ img {
   }
 }
 
-.service-page .service-items {
-  font-family: "Roboto";
-}
 .service-page .service-items .item {
   width: 31%;
   margin: 20px 10px;
@@ -229,7 +229,6 @@ img {
 }
 .service-page .service-items .services_text {
   color: #8f8f8f;
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
   width: 70%;
   margin: 0 auto;
@@ -359,7 +358,6 @@ img {
 }
 .menu_part .menu h3 {
   font-weight: 400;
-  font-family: "Lovers Quarrel", cursive;
   font-size: 86px;
   color: #000;
   letter-spacing: 4px;
@@ -376,7 +374,6 @@ img {
 }
 .menu_part .menu .item {
   padding-top: 20px;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
@@ -435,7 +432,6 @@ img {
   width: 55vw;
   color: #212121;
   margin: 0 30px;
-  font-family: "Mulish";
 }
 @media screen and (max-width: 990px) {
   .main__content .desc {
@@ -525,14 +521,12 @@ nav .top-header a {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-nav .top-header a img {
-  width: 45px;
+nav .top-header a i {
+  font-size: 25px;
   margin-left: 10px;
 }
-@media screen and (max-width: 560px) {
-  nav .top-header a img {
-    width: 30px;
-  }
+nav .top-header .insta_icon i {
+  font-size: 27px;
 }
 nav .top-header .top_info_box {
   display: flex;
@@ -540,7 +534,7 @@ nav .top-header .top_info_box {
   flex-wrap: nowrap;
   color: #000;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 25px;
   transition: all 0.3s ease;
 }
@@ -554,7 +548,6 @@ nav a:hover {
 }
 
 nav {
-  font-family: "Roboto";
   position: sticky;
   width: 100%;
   z-index: 300;
@@ -591,7 +584,8 @@ nav .nav .nav_menu li a {
   color: #000;
   padding: 5px 0;
   text-decoration-line: none;
-  font-size: 16px;
+  font-size: 23px;
+  letter-spacing: 1.3px;
   font-weight: 200;
   text-transform: uppercase;
   position: relative;
@@ -786,7 +780,6 @@ footer .foot_first .footer_nav li a {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
 }
@@ -794,7 +787,6 @@ footer .foot_first .footer_nav li a {
   font-size: 25px;
   padding: 40px 0;
   line-height: 1.2;
-  font-family: "Mulish", sans-serif;
   color: rgba(0, 0, 0, 0.575);
 }
 .section2 .btn {
@@ -817,13 +809,12 @@ footer .foot_first .footer_nav li a {
 .services_part .title h6 {
   color: #6247AA;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 50px;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   margin-bottom: 40px;
   text-align: center;
   padding: 80px 20px 20px;
-  font-family: "Playfair Display", serif;
 }
 @media screen and (max-width: 730px) {
   .services_part .title h6 {
@@ -878,25 +869,34 @@ footer .foot_first .footer_nav li a {
   color: transparent;
   transition: 0.2s;
 }
+.services_part .boxes .box:hover h6 {
+  color: #fff;
+}
 .services_part .boxes .box:hover .more {
-  color: #6247AA;
+  color: #fff;
+}
+.services_part .boxes .box:hover .icon img {
+  filter: invert(0);
 }
 .services_part .boxes .box .icon {
   width: 80px;
   margin: 20px auto;
 }
+.services_part .boxes .box .icon img {
+  filter: invert(100%);
+}
 .services_part .boxes .box h6 {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 600;
+  letter-spacing: 1.3px;
   line-height: 1.4;
-  font-family: "poppins", sans-serif;
   padding-bottom: 30px;
 }
 .services_part .boxes .box .more {
   color: #191514;
-  font-size: 16px;
+  font-size: 20px;
+  letter-spacing: 1.3px;
   font-weight: 600;
-  font-family: "Teko", sans-serif;
   text-decoration: none;
   background-color: transparent;
 }
@@ -910,7 +910,6 @@ footer .foot_first .footer_nav li a {
   margin-bottom: 30px;
   text-align: center;
   padding-top: 80px;
-  font-family: "Playfair Display", serif;
 }
 @media screen and (max-width: 730px) {
   .section3 h6 {
@@ -985,7 +984,6 @@ footer .foot_first .footer_nav li a {
   padding: 20px;
   width: 80%;
   line-height: 25px;
-  font-family: "Roboto", sans-serif;
 }
 @media screen and (max-width: 1040px) {
   .contact_us .contact_data .widget_contacts ul li .contact-text {
@@ -1038,7 +1036,6 @@ footer .foot_first .footer_nav li a {
   }
 }
 .contact_form h2 {
-  font-family: "EB Garamond", serif;
   font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;

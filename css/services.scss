@@ -5,13 +5,12 @@
     h6 {
       color: #6247AA;
       font-weight: 500;
-      font-size: 40px;
+      font-size: 50px;
       text-transform: uppercase;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       margin-bottom: 40px;
       text-align: center;
       padding: 80px 20px 20px;
-      font-family: "Playfair Display", serif;
       @media screen and (max-width: 730px){
         font-size: 30px;
         letter-spacing: 1px;
@@ -57,28 +56,40 @@
           color: transparent;
           transition: 0.2s;
         }
+           h6 {
+        color: #fff
+      }
         .more {
-          color: #6247AA;
+          color: #fff;
           
+        }
+         
+        .icon{
+          img{
+            filter: invert(0);
+          }
         }
       }
       .icon{
         width: 80px;
         // margin-bottom: 10px;
         margin: 20px auto;
+        img{
+          filter: invert(100%);
+        }
       }
       h6 {
-        font-size: 20px;
+        font-size: 23px;
         font-weight: 600;
+        letter-spacing: 1.3px;
         line-height: 1.4;
-        font-family: "poppins", sans-serif;
         padding-bottom: 30px;
       }
       .more {
         color: #191514;
-        font-size: 16px;
+        font-size: 20px;
+        letter-spacing: 1.3px;
         font-weight: 600;
-        font-family: "Teko", sans-serif;
         text-decoration: none;
         background-color: transparent;
       }

@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;900&display=swap");
+@font-face {
+  font-family: ArmFont;
+  src: url(../fonts/BraindYerevan.otf);
+}
 
 *,
 ::before,
@@ -13,6 +17,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth; 
   list-style-position: inside;
+}
+*{
+  font-family: ArmFont;
 }
 .container {
   max-width: 1580px;
@@ -40,7 +47,6 @@ img {
     position: absolute;
     text-transform: uppercase;
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 600px;
     left: 30%;
     top: 50%;
@@ -84,7 +90,6 @@ img {
     height: 100vh;
     text-align: center;
     color: #fff;
-    font-family: "Mulish", sans-serif;
     margin-bottom: 50px;
     .sec1_title {
       width: 50%;
@@ -109,7 +114,6 @@ img {
       .btn {
         margin: 20px 0;
         a {
-          font-family: "Mulish", sans-serif;
           text-decoration: none;
           display: inline-block;
           padding: 13px 30px;
@@ -136,7 +140,6 @@ img {
 }
 .button > a {
   color: #f8f9fa;
-  font-family: "Mulish", sans-serif;
   text-decoration-line: none;
   display: inline-block;
   padding: 13px 50px;
@@ -158,7 +161,6 @@ img {
   color: #fff;
 
   h2{
-    font-family: 'EB Garamond', serif;
     font-size: 60px;
 
     font-weight: 400;
