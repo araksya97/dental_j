@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;900&display=swap');
 @font-face {
   font-family: ArmFont;
   src: url(../fonts/BraindYerevan.otf);
 }
+// @font-face {
+//   font-family: Roboto;
+//   src: url(../fonts/Roboto-Regular.ttf);
+// }
 
 *,
 ::before,
@@ -15,14 +19,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   list-style-position: inside;
 }
-*{
-  font-family: ArmFont;
+* {
+  // font-family: ArmFont;
+  // font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
-  max-width: 1580px;
+  max-width: 1280px;
   margin: 0 auto;
   @media screen and (max-width: 1610px) {
     padding: 0 30px;
@@ -32,18 +38,17 @@ img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-
 }
-.head_section{
+.head_section {
   position: relative;
-  .head_img{
+  .head_img {
     width: 100%;
     height: 900px;
-    img{
+    img {
       object-position: right;
     }
   }
-  .head_text{
+  .head_text {
     position: absolute;
     text-transform: uppercase;
     color: #fff;
@@ -71,11 +76,11 @@ img {
   }
 }
 .swiper-pagination-bullet-active {
-  background: #6247AA;
+  background: #6247aa;
 }
 .swiper-button-next,
 .swiper-button-prev {
-  color: #6247AA;
+  color: #6247aa;
 }
 .section1 {
   position: relative;
@@ -126,14 +131,13 @@ img {
             background: #017c7e;
           }
         }
-
       }
     }
   }
 }
-.home_map{
+.home_map {
   width: 100%;
-  iframe{
+  iframe {
     width: 100%;
     height: 500px;
   }
@@ -160,7 +164,7 @@ img {
   text-align: center;
   color: #fff;
 
-  h2{
+  h2 {
     font-size: 60px;
 
     font-weight: 400;
@@ -168,28 +172,53 @@ img {
     letter-spacing: 15px;
     border-bottom: 3px solid #fff;
     text-transform: uppercase;
-  @media screen and (max-width: 700px) {
-    font-size: 40px;
-    line-height: 65px;
-    letter-spacing: 5px;
-  }
-  @media screen and (max-width: 420px) {
-     border: none;
+    @media screen and (max-width: 700px) {
+      font-size: 40px;
+      line-height: 65px;
+      letter-spacing: 5px;
+    }
+    @media screen and (max-width: 420px) {
+      border: none;
     }
   }
 }
-.title_bg{
-  height: 300px;
+.title_bg {
+  height: 400px;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   margin-bottom: 50px;
-  background-image: url(../img/250.jpg);
+  background-image: url(../img/title_image.jpg);
   @media screen and (max-width: 700px) {
     height: 200px;
-   }
+  }
 }
-@import "servicesPage.scss", "menu.scss","main.scss","nav.scss", "footer.scss", "about.scss", "services.scss", "team.scss",
-  "contact.scss";
+.sec_title {
+  background-color: #847299;
+  h6 {
+    max-width: 1280px;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    // text-align: center;
+    padding: 60px 0px;
+    @media screen and (max-width: 730px) {
+      font-size: 30px;
+      letter-spacing: 1px;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 30px;
+      padding: 40px 20px 20px;
+    }
+  }
+}
+@import 'servicesPage.scss', 'menu.scss', 'main.scss', 'nav.scss', 'footer.scss',
+  'about.scss', 'services.scss', 'team.scss', 'contact.scss';

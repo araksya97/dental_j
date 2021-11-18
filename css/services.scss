@@ -1,28 +1,7 @@
 .services_part {
-  background-color: #6147aa2d;
+  background-color: #e4e1eb2d;
   padding-bottom: 50px;
-  .title {
-    h6 {
-      color: #6247AA;
-      font-weight: 500;
-      font-size: 50px;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      margin-bottom: 40px;
-      text-align: center;
-      padding: 80px 20px 20px;
-      @media screen and (max-width: 730px){
-        font-size: 30px;
-        letter-spacing: 1px;
-      }
-      @media screen and (max-width: 450px){
-        font-size: 20px;
-        letter-spacing: 0;
-        line-height: 30px;
-        padding: 40px 20px 20px;
-      }
-    }
-  }
+  
   .boxes {
     display: flex;
     justify-content: space-between;
@@ -61,6 +40,7 @@
       }
         .more {
           color: #fff;
+         
           
         }
          
@@ -81,17 +61,18 @@
       h6 {
         font-size: 23px;
         font-weight: 600;
-        letter-spacing: 1.3px;
+        // letter-spacing: 1.3px;
         line-height: 1.4;
         padding-bottom: 30px;
       }
       .more {
         color: #191514;
-        font-size: 20px;
-        letter-spacing: 1.3px;
+        font-size: 17px;
+        // letter-spacing: 1.3px;
         font-weight: 600;
         text-decoration: none;
         background-color: transparent;
+        font-family: Helvetica, sans-serif;
       }
     }
   }

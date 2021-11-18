@@ -1,28 +1,32 @@
 nav {
-  .top-header.mobile{
-    display: none;
-    @media screen and (max-width: 735px) {
-      display: block;
-      padding: 20px   35px ;
-    }
+  .header{
+    background-color: #A496B5;
   }
+  // .top-header.mobile{
+  //   display: none;
+  //   @media screen and (max-width: 735px) {
+  //     display: block;
+  //     padding: 20px   35px ;
+  //   }
+  // }
   .top-header {
-    padding: 20px 0;
+    padding: 20px 30px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-     @media screen and (max-width: 735px) {
-        display: none;
-      }
+    //  @media screen and (max-width: 735px) {
+    //     display: none;
+    //   }
     strong.text {
       font-size: 21px;
-      @media screen and (max-width: 925px) {
-        display: none;
-      }
+      letter-spacing: 2px;
+      // @media screen and (max-width: 925px) {
+      //   display: none;
+      // }
      
     }
     a {
-      color: #000;
+      color: #fff;
       text-decoration: none;
       transition: all 0.3s ease;
       i {
@@ -42,7 +46,7 @@ nav {
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
-      color: #000;
+      color: #fff;
       text-decoration: none;
       font-size: 23px;
       line-height: 25px;
@@ -77,7 +81,7 @@ nav {
     .logo {
       height: 115px;
       max-width: 350px;
-      @media screen and (max-width: 560px) {
+      @media screen and (max-width: 925px) {
         height: 85px;
         max-width: 250px;
       }
@@ -93,10 +97,10 @@ nav {
           color: #000;
           padding: 5px 0;
           text-decoration-line: none;
-          font-size: 23px;
+          font-size: 22px;
           letter-spacing: 1.3px;
           font-weight: 200;
-          text-transform: uppercase;
+          // text-transform: uppercase;
           position: relative;
           &::before {
             position: absolute;
@@ -147,17 +151,17 @@ nav  .nav  .nav_menu.active {
       padding: 15px;
       .nav_menu {
         flex-direction: column;
-        top: 140px;
+        top: 180px;
         width: 100vw;
         left: 0;
         position: absolute;
         background: rgb(255, 255, 255);
-        transform: translateX(-1550px);
+        transform: translateX(1550px);
         transition: 0.5s;
         padding-bottom: 50px;
         li {
-          // text-align: center;
-          padding-top: 20px;
+          text-align: end;
+          padding:10px 30px;
         }
       }
     }

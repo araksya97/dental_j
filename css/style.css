@@ -19,11 +19,11 @@
 }
 
 * {
-  font-family: ArmFont;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  max-width: 1580px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 @media screen and (max-width: 1610px) {
@@ -80,12 +80,12 @@ img {
 }
 
 .swiper-pagination-bullet-active {
-  background: #6247AA;
+  background: #6247aa;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #6247AA;
+  color: #6247aa;
 }
 
 .section1 {
@@ -197,14 +197,14 @@ img {
 }
 
 .title_bg {
-  height: 300px;
+  height: 400px;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   margin-bottom: 50px;
-  background-image: url(../img/250.jpg);
+  background-image: url(../img/title_image.jpg);
 }
 @media screen and (max-width: 700px) {
   .title_bg {
@@ -212,25 +212,38 @@ img {
   }
 }
 
-.service-page .service-items .item {
-  width: 31%;
-  margin: 20px 10px;
+.sec_title {
+  background-color: #847299;
 }
-.service-page .service-items .item .image {
-  height: 350px;
+.sec_title h6 {
+  max-width: 1280px;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 500;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  padding: 60px 0px;
 }
-.service-page .service-items .item .image img {
-  object-fit: cover;
+@media screen and (max-width: 730px) {
+  .sec_title h6 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
 }
-.service-page .service-items .item h3 {
-  padding: 25px;
-  text-align: center;
-  background-color: #6147aa48;
+@media screen and (max-width: 450px) {
+  .sec_title h6 {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+    padding: 40px 20px 20px;
+  }
 }
+
 .service-page .service-items .services_text {
   color: #8f8f8f;
   line-height: 1.5;
-  width: 70%;
   margin: 0 auto;
   padding: 30px;
   font-size: 23px;
@@ -246,7 +259,7 @@ img {
 .description__card {
   position: relative;
   text-align: center;
-  width: 30%;
+  width: 35%;
   height: 300px;
   margin: 0 20px 40px;
   cursor: pointer;
@@ -294,13 +307,11 @@ img {
   padding: 0 30px;
 }
 .description__card-face .icon {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 .description__card-face h3 {
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-size: 18px;
   text-transform: uppercase;
   line-height: 1.74;
   color: #000;
@@ -310,18 +321,37 @@ img {
   font-size: 20px;
   line-height: inherit;
   font-weight: 400;
-  color: #272B47;
+  color: #fff;
   text-align: left;
   list-style: circle;
 }
 
 .back {
-  background: #DBDEE3;
+  background: #A496B5;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   -o-transform: rotateY(180deg);
+}
+
+.service_imageitems {
+  display: flex;
+}
+.service_imageitems .item {
+  width: 31%;
+  margin: 20px 10px;
+}
+.service_imageitems .item .image {
+  height: 350px;
+}
+.service_imageitems .item .image img {
+  object-fit: cover;
+}
+.service_imageitems .item h3 {
+  padding: 25px;
+  text-align: center;
+  background-color: #6147aa48;
 }
 
 .menu_part .menu_bg {
@@ -468,10 +498,11 @@ img {
   }
 }
 .main__content .desc p {
-  padding-bottom: 10px;
-  font-size: 20px;
-  letter-spacing: 0.8px;
+  color: #8f8f8f;
   line-height: 1.5;
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 23px;
   text-align: center;
 }
 
@@ -488,36 +519,21 @@ img {
   background: #f7f7f7;
 }
 
-nav .top-header.mobile {
-  display: none;
-}
-@media screen and (max-width: 735px) {
-  nav .top-header.mobile {
-    display: block;
-    padding: 20px 35px;
-  }
+nav .header {
+  background-color: #A496B5;
 }
 nav .top-header {
-  padding: 20px 0;
+  padding: 20px 30px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-@media screen and (max-width: 735px) {
-  nav .top-header {
-    display: none;
-  }
-}
 nav .top-header strong.text {
   font-size: 21px;
-}
-@media screen and (max-width: 925px) {
-  nav .top-header strong.text {
-    display: none;
-  }
+  letter-spacing: 2px;
 }
 nav .top-header a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -532,7 +548,7 @@ nav .top-header .top_info_box {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 23px;
   line-height: 25px;
@@ -565,7 +581,7 @@ nav .nav .logo {
   height: 115px;
   max-width: 350px;
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 925px) {
   nav .nav .logo {
     height: 85px;
     max-width: 250px;
@@ -584,10 +600,9 @@ nav .nav .nav_menu li a {
   color: #000;
   padding: 5px 0;
   text-decoration-line: none;
-  font-size: 23px;
+  font-size: 22px;
   letter-spacing: 1.3px;
   font-weight: 200;
-  text-transform: uppercase;
   position: relative;
 }
 nav .nav .nav_menu li a::before {
@@ -631,17 +646,18 @@ nav .nav .nav_menu.active {
   }
   nav .nav .nav_menu {
     flex-direction: column;
-    top: 140px;
+    top: 180px;
     width: 100vw;
     left: 0;
     position: absolute;
     background: white;
-    transform: translateX(-1550px);
+    transform: translateX(1550px);
     transition: 0.5s;
     padding-bottom: 50px;
   }
   nav .nav .nav_menu li {
-    padding-top: 20px;
+    text-align: end;
+    padding: 10px 30px;
   }
 }
 @keyframes animateLine {
@@ -803,32 +819,8 @@ footer .foot_first .footer_nav li a {
 }
 
 .services_part {
-  background-color: #6147aa2d;
+  background-color: #e4e1eb2d;
   padding-bottom: 50px;
-}
-.services_part .title h6 {
-  color: #6247AA;
-  font-weight: 500;
-  font-size: 50px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  margin-bottom: 40px;
-  text-align: center;
-  padding: 80px 20px 20px;
-}
-@media screen and (max-width: 730px) {
-  .services_part .title h6 {
-    font-size: 30px;
-    letter-spacing: 1px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .services_part .title h6 {
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 30px;
-    padding: 40px 20px 20px;
-  }
 }
 .services_part .boxes {
   display: flex;
@@ -888,33 +880,25 @@ footer .foot_first .footer_nav li a {
 .services_part .boxes .box h6 {
   font-size: 23px;
   font-weight: 600;
-  letter-spacing: 1.3px;
   line-height: 1.4;
   padding-bottom: 30px;
 }
 .services_part .boxes .box .more {
   color: #191514;
-  font-size: 20px;
-  letter-spacing: 1.3px;
+  font-size: 17px;
   font-weight: 600;
   text-decoration: none;
   background-color: transparent;
+  font-family: Helvetica, sans-serif;
 }
 
-.section3 h6 {
-  color: #6247AA;
-  font-weight: 500;
-  font-size: 40px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 30px;
-  text-align: center;
-  padding-top: 80px;
+.section3 .slide_part {
+  max-width: 1280px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 730px) {
-  .section3 h6 {
-    font-size: 30px;
-    letter-spacing: 1px;
+@media screen and (max-width: 1610px) {
+  .section3 .slide_part {
+    padding: 0 30px;
   }
 }
 .section3 .slide {
@@ -922,7 +906,7 @@ footer .foot_first .footer_nav li a {
   padding: 50px 0;
 }
 .section3 .slide .swiper-slide {
-  height: 350px;
+  height: 300px;
 }
 .section3 .slide .swiper-slide img {
   object-fit: cover;
